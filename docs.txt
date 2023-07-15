@@ -1,0 +1,8 @@
+
+
+dotnet aspnet-codegenerator razorpage -m razorweb.models.Article -dc razorweb.models.MyBlogContext -udl -outDir Pages/Blog --referenceScriptLibraries
+
+dotnet aspnet-codegenerator identity -dc razorweb.models.MyBlogContext
+
+dotnet new page -n Create -o Areas/Admin/Pages/Role -p:n App.Admin.Role
+dotnet new page -n EditUserRoleClaim -o Areas/Admin/Pages/User -p:n App.Admin.User
